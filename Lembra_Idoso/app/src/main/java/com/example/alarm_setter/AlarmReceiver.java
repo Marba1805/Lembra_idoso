@@ -24,7 +24,7 @@ public class AlarmReceiver extends BroadcastReceiver
         Vibrator vibrator = (Vibrator)context.getSystemService(context.VIBRATOR_SERVICE);
         vibrator.vibrate(4000);
 
-        Toast.makeText(context, "Alarm! Wake up! Wake up!", Toast.LENGTH_LONG).show();
+        Toast.makeText(context, "Toma seu remedio!!!", Toast.LENGTH_LONG).show();
         Uri alarmUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
         if (alarmUri == null)
         {
