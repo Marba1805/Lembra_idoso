@@ -36,7 +36,7 @@ public class NotificationHelper extends ContextWrapper {
 
         return mManager;
     }
-
+/*
     public NotificationCompat.Builder getChannelNotification() {
         return new NotificationCompat.Builder(getApplicationContext(), channelID)
                 .setContentTitle("Alarm!")
@@ -44,6 +44,6 @@ public class NotificationHelper extends ContextWrapper {
                 .setSmallIcon(R.drawable.ic_android);
 
     }
-
+*/
 }
 
