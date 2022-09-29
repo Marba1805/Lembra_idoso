@@ -11,6 +11,7 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import java.text.DateFormat;
 import java.util.Calendar;
 import android.os.Bundle;
 
@@ -27,6 +28,23 @@ public class MainActivity extends AppCompatActivity {
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
     }
+/*
+    public void AddAlarm(TimePicker view, int hourOfDay, int minute)
+    {
+        long time;
+        Calendar c = Calendar.getInstance();
+        c.set(Calendar.HOUR_OF_DAY, hourOfDay);
+        c.set(Calendar.MINUTE, minute);
+        c.set(Calendar.SECOND,0);
+        updateTimeText(c);
+        startAlarm(c);
+    }
+    private void updateTimeText (Calendar c)
+    {
+        String timeText = "Alarm set for: ";
+        timeText += String(DateFormat.getDateTimeInstance(DateFormat.SHORT).format(c));
+    }
+*/
     public void OnToggleClicked(View view)
     {
         long time;
@@ -35,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "ALARM ON", Toast.LENGTH_SHORT).show();
             Calendar calendar = Calendar.getInstance();
             calendar.set(Calendar.HOUR_OF_DAY, alarmTimePicker.getCurrentHour());
-            calendar.set(Calendar.MINUTE, alarmTimePicker.getCurrentMinute());
+            calendar.set(Calendar.MINUTE, alarmTimePicker.getCurrentMinute()+1);
             Intent intent = new Intent(this, AlarmReceiver.class);
             pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
 

@@ -8,8 +8,16 @@
     <TimePicker
         android:id="@+id/timePicker"
         android:layout_width="wrap_content"
-        android:layout_height="466dp"
+        android:layout_height="430dp"
         android:layout_gravity="center" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Ligar/desligar o Alarme"
+        android:textSize="27sp" />
 
     <ToggleButton
         android:id="@+id/toggleButton"
