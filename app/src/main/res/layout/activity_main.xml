@@ -11,12 +11,12 @@
         android:layout_height="430dp"
         android:layout_gravity="center" />
 
-    <Button
+    <!--<Button
         android:layout_width="100dp"
         android:text="alarmes"
         android:onClick:"MaisAlarmes"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"/>-->
 
 
     <TextView

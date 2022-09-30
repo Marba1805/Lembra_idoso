@@ -75,14 +75,15 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "ALARM OFF", Toast.LENGTH_SHORT).show();
         }
     }
+
+    
     public void MaisAlarme (View view)
     {
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()); {
-        @Override
+        /*listView.setOnItemClickListener(new AdapterView.OnItemClickListener()); {
         public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
             Toast.makeText(getApplicationContext(),"Click ListItem Number " + position, Toast.LENGTH_LONG).show();
         }
-    }
+    }*/
 }
 }
 
