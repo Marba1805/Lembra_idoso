@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -74,5 +75,14 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "ALARM OFF", Toast.LENGTH_SHORT).show();
         }
     }
+    public void MaisAlarme (View view)
+    {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()); {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
+            Toast.makeText(getApplicationContext(),"Click ListItem Number " + position, Toast.LENGTH_LONG).show();
+        }
+    }
+}
 }
 
