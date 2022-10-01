@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    
+
     public void MaisAlarme (View view)
     {
         /*listView.setOnItemClickListener(new AdapterView.OnItemClickListener()); {
