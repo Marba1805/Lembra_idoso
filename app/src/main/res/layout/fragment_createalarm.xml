@@ -49,13 +49,16 @@
             android:id="@+id/fragment_createalarm_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
             android:hint="Enter some description for the alarm"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_timePickerLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_timePickerLayout"
+            tools:layout_editor_absoluteX="-20dp" />
 
         <CheckBox
             android:id="@+id/fragment_createalarm_recurring"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="413dp"
+            android:layout_height="129dp"
+            android:layout_marginTop="116dp"
             android:checked="false"
             android:text="Recurring Alarm"
             app:layout_constraintStart_toStartOf="parent"
